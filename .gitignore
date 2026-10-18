@@ -1,0 +1,42 @@
+# --- Secrets (ne jamais committer) ---
+.env
+.env.*
+!.env.example
+credentials.json
+token.json
+
+# --- Bases de données locales ---
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Python ---
+venv/
+backend/venv/
+__pycache__/
+*.pyc
+
+# --- Node / React ---
+node_modules/
+frontend/node_modules/
+frontend/build/
+
+# --- Éditeurs et système ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Fichiers locaux non vérifiés (contenu non inspecté) ---
+backend/codes.txt
+backend/test_result.txt
+
+# --- Logs ---
+*.log
+
+# --- Exports de design (Claude Design) ---
+frontend/chat design/
+frontend/uploads/
+frontend/support.js
+frontend/*.dc.html
+*.thumbnail
