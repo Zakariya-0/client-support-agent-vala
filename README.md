@@ -242,6 +242,3 @@ La première étape serait d'ajouter une vraie authentification et une route qui
 
 Zakariya Sahid, ENSIAS.
 
-## Licence
-
-TODO : à compléter.
