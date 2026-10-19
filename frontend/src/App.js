@@ -5,6 +5,9 @@ import agentAvatar from './assets/agent-avatar.jpg';
 import chatWallpaper from './assets/chat-wallpaper.jpg';
 import './App.css';
 
+// Injectée au build (ARG REACT_APP_API_URL dans le Dockerfile, ou .env.local en dev)
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+
 const formatTime = () =>
   new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
 
@@ -35,7 +38,7 @@ function App() {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:8000/chat', {
+      const response = await axios.post(`${API_URL}/chat`, {
         client_email: email,
         message: userMessage
       });
