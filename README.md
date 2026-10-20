@@ -1,4 +1,4 @@
-# Vala Support Agent
+# Vala client Support Agent
 
 Agent de support client pour Vala, hébergeur web basé à Agadir (Maroc). Un client écrit sa question dans une interface de chat, un modèle de langage exécuté en local choisit l'outil adapté (vérifier l'expiration d'un domaine, envoyer un lien de réinitialisation, ouvrir un ticket, etc.) et répond en français.
 
